@@ -1,9 +1,6 @@
 body{
-    background-image: url("https://bit.ly/2ZjqK3o");
-    background-color: #cccccc;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    
+    background-color: #000000;
 }
 
 .main{
@@ -45,3 +42,11 @@ body{
     }
 }
 
+.init_form{
+    background-color: white;
+    position: absolute;
+    left:-10rem;
+}
+.game_status{
+    background-color: white;
+}
