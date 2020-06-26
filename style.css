@@ -1,7 +1,10 @@
 .main {
   position: relative;
-  border: 4px solid blue;
-  top: 7rem;
+  border: 4px solid white;
+  top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: black;
 }
 
 .main .board .square {
@@ -9,5 +12,24 @@
   height: 15rem;
   border: 3px solid black;
   background-color: red;
+  border-radius: 25px;
+  -webkit-box-shadow: inset 0px 0px 56px 14px black;
+  box-shadow: inset 0px 0px 56px 14px black;
+}
+
+.main .board .square span {
+  font-size: 9rem;
+  color: white;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px;
+}
+
+.main .board .square:hover {
+  width: 15rem;
+  height: 15rem;
+  border: 3px solid black;
+  background-color: #e7b62e;
+  border-radius: 25px;
+  -webkit-box-shadow: inset 0px -1px 31px 2px black;
+  box-shadow: inset 0px -1px 31px 2px black;
 }
 /*# sourceMappingURL=style.css.map */
