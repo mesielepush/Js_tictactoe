@@ -7,17 +7,23 @@ const Player = (name, token) => ({
     token,
 });
 
-function render() {
-    board.forEach((element, index) => {
-        const node = document.getElementById(`square_${index+1}`);
-        console.log(index)
-        const textnode = document.createTextNode(element);
-        node.addEventListener('click', () => {
-            mainGame().move(index);
-        });
-        node.appendChild(textnode);
-      });
-  }
+const renderBoard = (() => {
+    const render = (move)=> {
+        board.forEach((element, index) => {
+            const node = document.getElementById(`square_${index+1}`);
+            console.log(index)
+            const textnode = document.createTextNode(element);
+            node.addEventListener('click', () => {
+                move(index);
+            });
+            node.appendChild(textnode);
+          });
+      };
+      return {
+          render
+      };
+})();
+
   const mainGame = () => {
     let player1;
     let player2;
@@ -47,7 +53,7 @@ function render() {
       }
       if (!gameEnd) {
         board[index] = current.token;
-        render();
+        renderBoard.render(move);
       }
       if (is_winner()) {
         gameEnd = true;
@@ -70,7 +76,7 @@ function render() {
       board = ['', '', '', '', '', '', '', '', ''];
       set_init(name, token, name2, token2);
       document.getElementById('current').innerHTML =`It's ${current.name} turn`;
-      render();
+      renderBoard.render(move);
       
     };
     
