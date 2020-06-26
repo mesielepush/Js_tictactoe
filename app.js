@@ -80,6 +80,7 @@ function render() {
         current = current === player1 ? player2 : player1;
         document.getElementById('current').innerHTML = `It's ${current.name} turn`;
       }
+      console.log(board);
     };
     const startGame = () => {
       gameEnd = false;
@@ -90,7 +91,8 @@ function render() {
       board = ['', '', '', '', '', '', '', '', ''];
       set_init(name, token, name2, token2);
       document.getElementById('current').innerHTML =`It's ${current.name} turn`;
-      render();
+      render()
+      
     };
     return {
       move,
@@ -100,6 +102,19 @@ function render() {
   };
   
   document.getElementById('start').addEventListener('click', () => {
-    console.log('lkasjlkdj');
-    mainGame().startGame();
+    const game = mainGame();
+    game.startGame();
+    document.getElementById('square_1').addEventListener('click',move(0));
+    document.getElementById('square_2').addEventListener('click',move(1));
+    document.getElementById('square_3').addEventListener('click',move(2));
+    document.getElementById('square_4').addEventListener('click',move(3));
+    document.getElementById('square_5').addEventListener('click',move(4));
+    document.getElementById('square_6').addEventListener('click',move(5));
+    document.getElementById('square_7').addEventListener('click',move(6));
+    document.getElementById('square_8').addEventListener('click',move(7));
+    document.getElementById('square_9').addEventListener('click',move(8));
+    render()
   });
+  
+render();
+  
