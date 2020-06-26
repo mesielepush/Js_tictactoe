@@ -5,10 +5,8 @@ body{
 
 .main{
     position: relative;
-    
     top:4rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    left:-12rem;
     background-color: rgba(0,0,0,0.05);
 
     .board{
@@ -43,10 +41,26 @@ body{
 }
 
 .init_form{
+    position:relative;
     background-color: white;
-    position: absolute;
-    left:-10rem;
-}
-.game_status{
-    background-color: white;
+    left:0;
+    .player_one{
+        position:absolute;
+        left: 5rem;;
+    }
+    .player_two{
+        position:absolute;
+        left: 80rem;;
+    }
+    .game_status{
+        width: 15rem;
+        background-color: white;
+        position: absolute;
+        bottom:-5rem;
+        left: 39rem;
+        #start{
+            background-color: green;
+        }
+    }
+    
 }

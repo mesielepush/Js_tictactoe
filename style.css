@@ -5,8 +5,7 @@ body {
 .main {
   position: relative;
   top: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  left: -12rem;
   background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -38,12 +37,30 @@ body {
 }
 
 .init_form {
+  position: relative;
   background-color: white;
-  position: absolute;
-  left: -10rem;
+  left: 0;
 }
 
-.game_status {
+.init_form .player_one {
+  position: absolute;
+  left: 5rem;
+}
+
+.init_form .player_two {
+  position: absolute;
+  left: 80rem;
+}
+
+.init_form .game_status {
+  width: 15rem;
   background-color: white;
+  position: absolute;
+  bottom: -5rem;
+  left: 39rem;
+}
+
+.init_form .game_status #start {
+  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */
