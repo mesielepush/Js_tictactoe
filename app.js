@@ -11,12 +11,19 @@ const renderBoard = (() => {
     const render = (move)=> {
         board.forEach((element, index) => {
             const node = document.getElementById(`square_${index+1}`);
-            console.log(index)
+            console.log('INDEX: ',index)
+            var child = node.lastElementChild;  
+                while (child) { 
+                    node.removeChild(child); 
+                    child = node.lastElementChild; 
+                }
+            const squareSpan = document.createElement('span')
             const textnode = document.createTextNode(element);
             node.addEventListener('click', () => {
                 move(index);
             });
-            node.appendChild(textnode);
+            node.appendChild(squareSpan);
+            squareSpan.appendChild(textnode)
           });
       };
       return {
