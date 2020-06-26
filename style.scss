@@ -1,0 +1,15 @@
+.main{
+    position: relative;
+    border:4px solid blue;
+    top:7rem;
+    .board{
+    
+        .square{
+            width: 15rem;
+            height: 15rem;
+            border: 3px solid black;
+            background-color: red;
+        }
+    }
+}
+

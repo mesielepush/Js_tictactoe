@@ -1,1 +1,13 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.main {
+  position: relative;
+  border: 4px solid blue;
+  top: 7rem;
+}
+
+.main .board .square {
+  width: 15rem;
+  height: 15rem;
+  border: 3px solid black;
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */
