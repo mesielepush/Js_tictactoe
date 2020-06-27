@@ -19,16 +19,6 @@ body {
   box-shadow: inset 0 0 56px 14px black;
 }
 
-.main .board .square .square_end {
-  width: 18rem;
-  height: 165rem;
-  border: 3px solid black;
-  background-color: #0e4403 !important;
-  border-radius: 25px;
-  -webkit-box-shadow: inset 0 0 56px 14px black;
-  box-shadow: inset 0 0 56px 14px black;
-}
-
 .main .board .square span {
   font-size: 8rem;
   font-family: 'Notable', sans-serif;
@@ -74,4 +64,3 @@ body {
 .init_form .game_status #start {
   background-color: green;
 }
-/*# sourceMappingURL=style.css.map */

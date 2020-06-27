@@ -1,6 +1,17 @@
 let board = ['', '', '', '', '', '', '', '', ''];
 
-
+function endGameColor() {
+  const e = document.getElementsByClassName('square');
+  for (let i = 0; i < e.length; i += 1) {
+    e[i].style.backgroundColor = 'rgb(14, 68, 3)';
+  }
+}
+function normalGameColor() {
+  const e = document.getElementsByClassName('square');
+  for (let i = 0; i < e.length; i += 1) {
+    e[i].style.backgroundColor = 'rgb(159, 147, 199)';
+  }
+}
 const Player = (name, token) => ({
   name,
   token,
@@ -62,6 +73,7 @@ const mainGame = () => {
     }
     if (isWinner()) {
       gameEnd = true;
+      endGameColor();
       document.getElementById('current').innerHTML = `${current.name} Has Won. Congratulations!`;
     } else if (draw()) {
       gameEnd = true;
@@ -92,5 +104,6 @@ const mainGame = () => {
 
 document.getElementById('start').addEventListener('click', () => {
   const game = mainGame();
+  normalGameColor();
   game.startGame();
 });
