@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #000;
 }
 
 .main {
@@ -15,15 +15,15 @@ body {
   border: 3px solid black;
   background-color: #9f93c7;
   border-radius: 25px;
-  -webkit-box-shadow: inset 0px 0px 56px 14px black;
-  box-shadow: inset 0px 0px 56px 14px black;
+  -webkit-box-shadow: inset 0 0 56px 14px black;
+  box-shadow: inset 0 0 56px 14px black;
 }
 
 .main .board .square span {
   font-size: 8rem;
   font-family: 'Notable', sans-serif;
   color: rgba(212, 211, 211, 0.2);
-  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px;
 }
 
 .main .board .square:hover {
@@ -32,8 +32,8 @@ body {
   border: 3px solid black;
   background-color: #5e77ac;
   border-radius: 25px;
-  -webkit-box-shadow: inset 0px -1px 31px 2px black;
-  box-shadow: inset 0px -1px 31px 2px black;
+  -webkit-box-shadow: inset 0 -1px 31px 2px black;
+  box-shadow: inset 0 -1px 31px 2px black;
 }
 
 .init_form {
@@ -63,4 +63,3 @@ body {
 .init_form .game_status #start {
   background-color: green;
 }
-/*# sourceMappingURL=style.css.map */

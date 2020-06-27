@@ -1,7 +1,6 @@
 let board = ['','','','','','','','','']
 
 
-
 const Player = (name, token) => ({
     name,
     token,
@@ -11,7 +10,6 @@ const renderBoard = (() => {
     const render = (move)=> {
         board.forEach((element, index) => {
             const node = document.getElementById(`square_${index+1}`);
-            console.log('INDEX: ',index)
             var child = node.lastElementChild;  
                 while (child) { 
                     node.removeChild(child); 
@@ -97,6 +95,5 @@ const renderBoard = (() => {
   document.getElementById('start').addEventListener('click', () => {
     const game = mainGame();
     game.startGame();
-    console.log(board)
   });
   
