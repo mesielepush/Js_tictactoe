@@ -18,7 +18,16 @@ body {
       -webkit-box-shadow: inset 0 0 56px 14px rgba(0, 0, 0, 1);
       -moz-box-shadow: inset 0 0 56px 14px rgba(0, 0, 0, 1);
       box-shadow: inset 0 0 56px 14px rgba(0, 0, 0, 1);
-
+    .square_end{
+      width: 18rem;
+      height: 165rem;
+      border: 3px solid black;
+      background-color: rgb(14, 68, 3)!important;
+      border-radius: 25px;
+      -webkit-box-shadow: inset 0 0 56px 14px rgba(0, 0, 0, 1);
+      -moz-box-shadow: inset 0 0 56px 14px rgba(0, 0, 0, 1);
+      box-shadow: inset 0 0 56px 14px rgba(0, 0, 0, 1);
+    }
       span {
         font-size: 8rem;
         font-family: 'Notable', sans-serif;
@@ -52,15 +61,16 @@ body {
 
   .player_two {
     position: absolute;
-    left: 80rem;
+    left: 5rem;
+    top: 2rem;;
   }
 
   .game_status {
     width: 15rem;
     background-color: white;
     position: absolute;
-    bottom: -5rem;
-    left: 39rem;
+    top: 5rem;
+    left: 3.5rem;
 
     #start {
       background-color: green;

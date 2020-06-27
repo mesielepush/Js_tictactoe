@@ -75,8 +75,8 @@ const mainGame = () => {
     gameEnd = false;
     const name = document.getElementById('player1').value;
     const name2 = document.getElementById('player2').value;
-    const token = document.getElementById('token1').value;
-    const token2 = document.getElementById('token2').value;
+    const token = 'X';
+    const token2 = 'O';
     board = ['', '', '', '', '', '', '', '', ''];
     setInit(name, token, name2, token2);
     document.getElementById('current').innerHTML = `It's ${current.name} turn`;

@@ -1,2 +1,3 @@
 # Js_tictactoe
- A tic tac toe implementation using JS:ES6
+ A tic tac toe implementation using JS:ES6  
+ ![photo flexing]()
