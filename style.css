@@ -1,0 +1,66 @@
+body {
+  background-color: #000;
+}
+
+.main {
+  position: relative;
+  top: 4rem;
+  left: -12rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.main .board .square {
+  width: 15rem;
+  height: 15rem;
+  border: 3px solid black;
+  background-color: #9f93c7;
+  border-radius: 25px;
+  -webkit-box-shadow: inset 0 0 56px 14px black;
+  box-shadow: inset 0 0 56px 14px black;
+}
+
+.main .board .square span {
+  font-size: 8rem;
+  font-family: 'Notable', sans-serif;
+  color: rgba(212, 211, 211, 0.2);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px;
+}
+
+.main .board .square:hover {
+  width: 15rem;
+  height: 15rem;
+  border: 3px solid black;
+  background-color: #5e77ac;
+  border-radius: 25px;
+  -webkit-box-shadow: inset 0 -1px 31px 2px black;
+  box-shadow: inset 0 -1px 31px 2px black;
+}
+
+.init_form {
+  position: relative;
+  background-color: white;
+  left: 0;
+}
+
+.init_form .player_one {
+  position: absolute;
+  left: 5rem;
+}
+
+.init_form .player_two {
+  position: absolute;
+  left: 5rem;
+  top: 2rem;
+}
+
+.init_form .game_status {
+  width: 15rem;
+  background-color: white;
+  position: absolute;
+  top: 5rem;
+  left: 3.5rem;
+}
+
+.init_form .game_status #start {
+  background-color: green;
+}

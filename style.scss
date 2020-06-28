@@ -1,0 +1,70 @@
+body {
+  background-color: #000;
+}
+
+.main {
+  position: relative;
+  top: 4rem;
+  left: -12rem;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  .board {
+    .square {
+      width: 15rem;
+      height: 15rem;
+      border: 3px solid black;
+      background-color: rgb(159, 147, 199);
+      border-radius: 25px;
+      -webkit-box-shadow: inset 0 0 56px 14px rgba(0, 0, 0, 1);
+      -moz-box-shadow: inset 0 0 56px 14px rgba(0, 0, 0, 1);
+      box-shadow: inset 0 0 56px 14px rgba(0, 0, 0, 1);
+
+      span {
+        font-size: 8rem;
+        font-family: 'Notable', sans-serif;
+        color: rgba(212, 211, 211, 0.2);
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px;
+      }
+    }
+
+    .square:hover {
+      width: 15rem;
+      height: 15rem;
+      border: 3px solid black;
+      background-color: rgb(94, 119, 172);
+      border-radius: 25px;
+      -webkit-box-shadow: inset 0 -1px 31px 2px rgba(0, 0, 0, 1);
+      -moz-box-shadow: inset 0 -1px 31px 2px rgba(0, 0, 0, 1);
+      box-shadow: inset 0 -1px 31px 2px rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+.init_form {
+  position: relative;
+  background-color: white;
+  left: 0;
+
+  .player_one {
+    position: absolute;
+    left: 5rem;
+  }
+
+  .player_two {
+    position: absolute;
+    left: 5rem;
+    top: 2rem;
+  }
+
+  .game_status {
+    width: 15rem;
+    background-color: white;
+    position: absolute;
+    top: 5rem;
+    left: 3.5rem;
+
+    #start {
+      background-color: green;
+    }
+  }
+}
