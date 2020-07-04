@@ -1,10 +1,12 @@
 # Js_tictactoe
- A tic tac toe implementation using JS:ES6  
- ![photo flexing](https://i.imgur.com/KC6vjZq.png)  
+ This is a UnitTest for the [Tic Tac Toe] project on JS.  
+ It uses Jest to make the testing and it test the essential logic of the game.  
+
+ ![photo flexing](https://i.imgur.com/Zgomkog.png)  
 
 ## Instructions
 
-To install just download the repository and open ```index.html``` on your favorite browser.
+To run just download the repository on a console and type ```yarn jest```
 
 ## Issues
 [Issues page](https://github.com/mesielepush/Js_tictactoe/issues)  

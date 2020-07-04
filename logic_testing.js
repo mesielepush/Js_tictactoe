@@ -23,31 +23,25 @@ const Player = (name, token) => ({
       console.log('Someone win Game is Over')
       return 'Someone win Game is Over'
     } 
-    else if (board[index] !== ''){
-      console.log('There is already a move there')
-        return 'There is already a move there'
-    }
+    
     else if (draw(board)) {
       console.log("It's a draw, game is over")
       return "It's a draw, game is over"
-    } else {
+    } else if (board[index] !== ''){
+      console.log('There is already a move there')
+        return 'There is already a move there'
+    }else {
       board[index] = token;
     
       console.log(board)
       return board
     }
   }
-  
-let board = [ '', '', '', '', '', '','O', 'O', 'O',];
-move(6,'X',board)
+
 
 module.exports = {
   Player,
-  horizontal,
-  vertical,
-  diagonal,
-  isWinner,
-  draw,
+  
   move
 }
 

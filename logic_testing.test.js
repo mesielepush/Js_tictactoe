@@ -1,10 +1,5 @@
 const {
-    Player,
-  horizontal,
-  vertical,
-  diagonal,
-  isWinner,
-  draw,
+  Player,
   move
   } = require('./logic_testing');
 
@@ -22,4 +17,16 @@ test('Test to not commit on a occupied square',()=>{
 test('Test to a horizontal win',()=>{
     let board = [ '', '', '', '', '', '','O', 'O', 'O',];
     expect(move(6,'X',board)).toBe('Someone win Game is Over');
+})
+test('Test to a vertical win',()=>{
+    let board = [ '', '', 'O', '', '', 'O','', '', 'O',];
+    expect(move(6,'X',board)).toBe('Someone win Game is Over');
+})
+test('Test to a diagonal win',()=>{
+    let board = [ 'O', '', '', '', 'O', '','', '', 'O',];
+    expect(move(6,'X',board)).toBe('Someone win Game is Over');
+})
+test('Test to a Draw',()=>{
+    let board = [ 'O', 'X', 'O', 'X', 'X', 'O','X', 'O', 'X',];
+    expect(move(6,'X',board)).toBe("It's a draw, game is over");
 })
