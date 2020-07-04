@@ -1,5 +1,5 @@
 # Js_tictactoe
- This is a UnitTest for the [Tic Tac Toe] project on JS.  
+ This is a UnitTest for the [Tic Tac Toe](https://github.com/mesielepush/Js_tictactoe) project on JS.  
  It uses Jest to make the testing and it test the essential logic of the game.  
 
  ![photo flexing](https://i.imgur.com/Zgomkog.png)  
