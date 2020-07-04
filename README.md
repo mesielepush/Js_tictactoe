@@ -6,7 +6,8 @@
 
 ## Instructions
 
-To run just download the repository on a console and type ```yarn jest```
+To run just download the repository on a console and install webpack by typing ```yarn add webpack --dev``` into the console.  
+Then just type: ```yarn test ``` to run the tests.
 
 ## Issues
 [Issues page](https://github.com/mesielepush/Js_tictactoe/issues)  
