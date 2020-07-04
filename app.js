@@ -107,8 +107,3 @@ document.getElementById('start').addEventListener('click', () => {
   normalGameColor();
   game.startGame();
 });
-
-module.exports ={
-  mainGame,
-  Player
-}
