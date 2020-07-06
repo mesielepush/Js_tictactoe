@@ -34,6 +34,10 @@ const move = (index, token, board) => {
 
 module.exports = {
   Player,
-
+  horizontal,
+  vertical,
+  diagonal,
+  isWinner,
+  draw,
   move,
 };
